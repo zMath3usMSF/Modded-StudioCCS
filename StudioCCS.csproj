@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{3B3FEEF9-B34A-41AA-9084-605B66648CAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StudioCCS</RootNamespace>
+    <AssemblyName>StudioCCS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>StudioCCS.ico</ApplicationIcon>
+    <StartupObject>StudioCCS.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\StudioCCS v2.5B\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\StudioCCS v2.5B\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>..\..\StudioCCS v2.5B\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArcBallCamera.cs" />
+    <Compile Include="AxisMarker.cs" />
+    <Compile Include="CCSFileExplorerWV\BINHelper.cs" />
+    <Compile Include="frmEditBone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBone.Designer.cs">
+      <DependentUpon>frmEditBone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportToOBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportToOBJ.Designer.cs">
+      <DependentUpon>frmExportToOBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoadScene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoadScene.Designer.cs">
+      <DependentUpon>FrmLoadScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.cs" />
+    <Compile Include="libCCS\CCSAnime.cs" />
+    <Compile Include="libCCS\CCSBaseObject.cs" />
+    <Compile Include="libCCS\CCSBinaryBlob.cs" />
+    <Compile Include="libCCS\CCSBlitGroup.cs" />
+    <Compile Include="libCCS\CCSBoundingBox.cs" />
+    <Compile Include="libCCS\CCSCamera.cs" />
+    <Compile Include="libCCS\CCSClump.cs" />
+    <Compile Include="libCCS\CCSClut.cs" />
+    <Compile Include="libCCS\CCSDummy.cs" />
+    <Compile Include="libCCS\CCSEffect.cs" />
+    <Compile Include="libCCS\CCSExt.cs" />
+    <Compile Include="libCCS\CCSFBPage.cs" />
+    <Compile Include="libCCS\CCSFBRect.cs" />
+    <Compile Include="libCCS\CCSFile.cs" />
+    <Compile Include="libCCS\CCSFileHeader.cs" />
+    <Compile Include="libCCS\CCSHitMesh.cs" />
+    <Compile Include="libCCS\CCSLayer.cs" />
+    <Compile Include="libCCS\CCSLight.cs" />
+    <Compile Include="libCCS\CCSMaterial.cs" />
+    <Compile Include="libCCS\CCSModel.cs" />
+    <Compile Include="libCCS\CCSMorpher.cs" />
+    <Compile Include="libCCS\CCSObject.cs" />
+    <Compile Include="libCCS\CCSParticle.cs" />
+    <Compile Include="libCCS\CCSPCM.cs" />
+    <Compile Include="libCCS\CCSShadow.cs" />
+    <Compile Include="libCCS\CCSTexture.cs" />
+    <Compile Include="libCCS\IndexFileEntry.cs" />
+    <Compile Include="libCCS\IndexObjectEntry.cs" />
+    <Compile Include="libCCS\Util.cs" />
+    <Compile Include="libETC\FileHelper.cs" />
+    <Compile Include="libSTUDIOGEN2_5\configFileClass.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="TestTriangle.cs" />
+    <Compile Include="TexturePreview.cs" />
+    <Compile Include="TreeNodeTag.cs" />
+    <Compile Include="ViewportPicbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WireHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEditBone.resources" />
+    <EmbeddedResource Include="frmExportToOBJ.resources" />
+    <EmbeddedResource Include="frmInfo.resources" />
+    <EmbeddedResource Include="FrmLoadScene.resources" />
+    <EmbeddedResource Include="MainForm.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

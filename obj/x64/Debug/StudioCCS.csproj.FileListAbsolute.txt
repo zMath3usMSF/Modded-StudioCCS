@@ -1,0 +1,12 @@
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\obj\x64\Debug\StudioCCS.csproj.AssemblyReference.cache
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\obj\x64\Debug\StudioCCS.csproj.CoreCompileInputs.cache
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\StudioCCS.exe.config
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\StudioCCS.exe
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\StudioCCS.pdb
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\OpenTK.dll
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\OpenTK.GLControl.dll
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\obj\x64\Debug\StudioCCS.csproj.Up2Date
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\obj\x64\Debug\StudioCCS.exe
+C:\Users\User255\Desktop\Nova pasta (2)\StudioCCS\obj\x64\Debug\StudioCCS.pdb

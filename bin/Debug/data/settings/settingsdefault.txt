@@ -1,0 +1,1 @@
+{"movement_isDefault":false,"movement_quickchangekey":"Shift","fastCameraMove_key":"E","fastCameraMove_speedMultiplier":20}
